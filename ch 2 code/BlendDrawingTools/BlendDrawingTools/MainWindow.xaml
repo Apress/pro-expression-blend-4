@@ -1,0 +1,57 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:Anno="http://schemas.microsoft.com/expression/blend/extensions/annotations/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ee="http://schemas.microsoft.com/expression/2010/effects" mc:Ignorable="Anno"
+	x:Class="BlendDrawingTools.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Anno:AnnotationManager.Annotations>
+		<Anno:Annotation AuthorInitials="AWT" Author="Andrew Troelsen" Left="-47" SerialNumber="1" Top="-24" Timestamp="08/29/2010 20:37:50" Text="Howdy!  This Blend project illustrates a number of common drawing tools, including visual effects, interacting with objects in code, and various aspects of the Properties panel. &#xd;&#xa;&#xd;&#xa;Enjoy!"/>
+		<Anno:Annotation AuthorInitials="AWT" Author="Andrew Troelsen" Left="-49.447" SerialNumber="2" Top="13.5" Timestamp="08/29/2010 20:47:36" Text="Don't forget to click on the &quot;turn of rendering of effects&quot; button on your artboard controls to show or hide visual effects on the designer. "/>
+	</Anno:AnnotationManager.Annotations>
+
+	<Grid x:Name="LayoutRoot">
+		<Path x:Name="oddShape" Data="M89,30 C79.811696,45.31384 74.75358,58.558025 64,72 46.977274,93.278408 44.236802,78.728003 63,110 83.246295,143.74383 114.00045,128.99955 67,176 32.962386,210.03761 27.509333,191.94057 75,253 79.108416,258.28225 84.611935,262.41519 89,268 91.255082,270.8701 92.372174,273.20928 99,271 101.67336,270.10888 103.48129,266.53119 105,264 112.94051,250.76582 126.57454,240.56364&#xa;132,227 153.8212,222.63576 152.62651,194.74698 163,174 171.985,182.985 111.26942,142.50426 111.26942,103.31227 111.26942,85.575108 303.67389,107.08455 154.76889,155.81248 150.93376,157.06749 220.9062,101.05063 254.58731,91.864878 274.94176,86.313665 185.53548,91.488173 205,85 218.5678,17.161016 169.8663,56.264269 89,30 z" HorizontalAlignment="Left" Margin="8,32.126,0,198" Stretch="Fill" Stroke="Black" Width="251.204" MouseEnter="InsideAShape" MouseLeave="OutsideAShape">
+			<Path.Effect>
+				<BlurEffect Radius="13"/>
+			</Path.Effect>
+			<Path.Fill>
+				<ImageBrush ImageSource="imageC.bmp"/>
+			</Path.Fill>
+		</Path>
+		<Path x:Name="fancyShape" Data="M254,101 C297.83333,110.83333 309,149.76254 364,88.762455 419,27.762376 456.83333,142.5 492.5,148.5 419.5,159.83333 229.5,236.5 273.5,182.5 317.5,128.5 242.83333,164.5 227.5,155.5 z" Margin="8,0,0,8" Stretch="Fill" Stroke="Black" Height="126" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="233" MouseEnter="InsideAShape" MouseLeave="OutsideAShape">
+			<Path.Effect>
+				<DropShadowEffect ShadowDepth="17"/>
+			</Path.Effect>
+			<Path.Fill>
+				<RadialGradientBrush RadiusY="0.587" RadiusX="0.587" GradientOrigin="0.386,0.662">
+					<GradientStop Color="#FFCE1DD8" Offset="0.458"/>
+					<GradientStop Color="#FFB0BBE9" Offset="0.747"/>
+					<GradientStop Color="#FF2B022D" Offset="0.153"/>
+					<GradientStop Color="#FFDF8064" Offset="0.522"/>
+				</RadialGradientBrush>
+			</Path.Fill>
+		</Path>
+		<Path x:Name="myStar" Data="M117.5,0.5 L124.7254,57.65331 163.09743,-50.410094 137.92686,61.669108 204.92688,27.094695 147.59633,69.006338 229.38655,56.039988 152.06187,78.396325 234.50001,89.280037 150.55135,88.215455 219.38311,121.06734 172.1167,201.3817 186.64969,145.90558 131.63501,102.56924 141.95966,159.49999 14.780514,177.30599 93.040342,159.49999 103.36499,102.56924 48.350318,145.90558 91.674053,96.765911 15.616902,121.06734 84.448655,88.215455 -77.416488,61.943217 82.938135,78.396325&#xd;&#xa;5.6134615,56.039988 87.403677,69.006338 30.073123,27.094695 97.073147,61.669108 69.649686,7.4490627 99.962527,-45.394322 z" Fill="#FF279111" Margin="303.75,41.667,8,148.333" Stretch="Fill" Stroke="Black" MouseEnter="InsideAShape" MouseLeave="OutsideAShape">
+			<Path.Effect>
+				<ee:RippleEffect/>
+			</Path.Effect>
+		</Path>
+		<ed:Callout x:Name="myCallout" AnchorPoint="0,1.5" CalloutStyle="Cloud" Content="Callout" Fill="#FFF4F4F5" FontSize="14.667" Height="74" Stroke="Black" VerticalAlignment="Bottom" Margin="0,0,70.796,48.5" HorizontalAlignment="Right" Width="147" MouseEnter="InsideAShape" MouseLeave="OutsideAShape">
+			<ed:Callout.Effect>
+				<ee:PixelateEffect Pixelation="0.45"/>
+			</ed:Callout.Effect>
+		</ed:Callout>
+		<ed:RegularPolygon x:Name="simpleHexagon" InnerRadius="1" Margin="263.204,32.126,233.796,0" PointCount="6" Stretch="Fill" Stroke="Black" Fill="#FFDF8064" Height="97" VerticalAlignment="Top" MouseEnter="InsideAShape" MouseLeave="OutsideAShape">
+			<ed:RegularPolygon.Effect>
+				<ee:SwirlEffect TwistAmount="21.6"/>
+			</ed:RegularPolygon.Effect>
+		</ed:RegularPolygon>
+		<Path Data="M118,274 L189.5,232.5 250.5,260.5 297.5,219.5" Margin="146.667,219.5,296.833,167" Stretch="Fill" Stroke="Black" StrokeThickness="10" StrokeStartLineCap="Round" StrokeEndLineCap="Triangle" StrokeDashArray="1 1"/>
+		<Path Data="M38,292.66667 L345.33984,292.66667" Fill="#FFF4F4F5" Height="1" Margin="38,0,277.66,148.333" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" StrokeDashArray="0.5 1 2 1" StrokeThickness="5"/>
+		<Path Data="M-232,180" HorizontalAlignment="Left" Height="1" Margin="-232,180,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1">
+			<Path.Fill>
+				<ImageBrush ImageSource="imageC.bmp"/>
+			</Path.Fill>
+		</Path>
+	</Grid>
+</Window>

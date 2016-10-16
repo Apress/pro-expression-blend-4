@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreApp", "OnlineStoreApp\OnlineStoreApp.csproj", "{4370abf3-b338-4829-93e3-2fb08ed15c99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreAppScreens", "OnlineStoreApp\OnlineStoreAppScreens\OnlineStoreAppScreens.csproj", "{669e6f62-05af-41c0-bb47-9c365409ccc9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4370ABF3-B338-4829-93E3-2FB08ED15C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4370ABF3-B338-4829-93E3-2FB08ED15C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4370ABF3-B338-4829-93E3-2FB08ED15C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4370ABF3-B338-4829-93E3-2FB08ED15C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669E6F62-05AF-41C0-BB47-9C365409CCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669E6F62-05AF-41C0-BB47-9C365409CCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669E6F62-05AF-41C0-BB47-9C365409CCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669E6F62-05AF-41C0-BB47-9C365409CCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

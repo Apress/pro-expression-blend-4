@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveTeddyBear", "InteractiveTeddyBear\InteractiveTeddyBear.csproj", "{f90e8daf-bdf2-4e20-99d6-16e01bab1fc6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F90E8DAF-BDF2-4E20-99D6-16E01BAB1FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90E8DAF-BDF2-4E20-99D6-16E01BAB1FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90E8DAF-BDF2-4E20-99D6-16E01BAB1FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90E8DAF-BDF2-4E20-99D6-16E01BAB1FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

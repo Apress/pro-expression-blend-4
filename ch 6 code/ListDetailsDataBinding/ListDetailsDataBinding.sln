@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListDetailsDataBinding", "ListDetailsDataBinding\ListDetailsDataBinding.csproj", "{7e957593-79de-4c79-9672-58f68f0668b5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E957593-79DE-4C79-9672-58F68F0668B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E957593-79DE-4C79-9672-58F68F0668B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E957593-79DE-4C79-9672-58F68F0668B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E957593-79DE-4C79-9672-58F68F0668B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

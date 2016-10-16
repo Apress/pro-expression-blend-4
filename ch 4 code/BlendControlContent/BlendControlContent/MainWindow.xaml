@@ -1,0 +1,31 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="BlendControlContent.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="498" Height="264">
+	<Window.Resources>
+		<Storyboard x:Key="AnimateStar" AutoReverse="True" RepeatBehavior="Forever">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="regularPolygon">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFE3EF0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2620F1"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource AnimateStar}"/>
+		</EventTrigger>
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<Button x:Name="btnFancyButton" Height="65" Margin="147,73,153,0" VerticalAlignment="Top" Click="Button_Click">
+			<StackPanel x:Name="command" Height="57" Width="174" Orientation="Horizontal">
+				<ed:RegularPolygon x:Name="regularPolygon" Fill="#FFE3EF0D" Height="56" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="Black" HorizontalAlignment="Left" Width="71" StrokeThickness="3" MouseDown="regularPolygon_MouseDown"/>
+				<Label Content="OK!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontStyle="Italic"/>
+			</StackPanel>
+		</Button>
+	</Grid>
+</Window>

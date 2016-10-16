@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
+    <ProjectGuid>{FD7CD28F-13DA-4816-8917-946B945A3D4F}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>PCGamingSketchScreens</DefaultClrNameSpace>
+    <RootNamespace>PCGamingSketchScreens</RootNamespace>
+    <AssemblyName>PCGamingSketch.Screens</AssemblyName>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ExpressionBlendPrototypingEnabled>true</ExpressionBlendPrototypingEnabled>
+    <ExpressionBlendPrototypeHarness>false</ExpressionBlendPrototypeHarness>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity" />
+    <Reference Include="Microsoft.Expression.Prototyping.Runtime" />
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ProjectDataSources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDataSources>True</ContainsDataSources>
+    </Page>
+    <Page Include="SampleData\GamesSampleDataSource\GamesSampleDataSource.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_2.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_3.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_4.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_5.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_6.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_7.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen1_8.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SketchStyles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="CircularPanel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Properties\Version.cs">
+      <Link>Properties\Version.cs</Link>
+    </Compile>
+    <Compile Include="SampleData\GamesSampleDataSource\GamesSampleDataSource.xaml.cs">
+      <DependentUpon>GamesSampleDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1.xaml.cs">
+      <DependentUpon>Screen1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_1.xaml.cs">
+      <DependentUpon>Screen1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_2.xaml.cs">
+      <DependentUpon>Screen1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_3.xaml.cs">
+      <DependentUpon>Screen1_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_4.xaml.cs">
+      <DependentUpon>Screen1_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_5.xaml.cs">
+      <DependentUpon>Screen1_5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_6.xaml.cs">
+      <DependentUpon>Screen1_6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_7.xaml.cs">
+      <DependentUpon>Screen1_7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen1_8.xaml.cs">
+      <DependentUpon>Screen1_8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WheelSpinner.cs" />
+    <Resource Include="Fonts\BuxtonSketch.ttf" />
+    <Resource Include="Fonts\SketchFlowPrint.ttf" />
+    <Resource Include="Fonts\SegoeMarker.ttf" />
+    <Resource Include="Images\alt2_A.JPG" />
+    <Resource Include="Images\alt2_B.JPG" />
+    <Resource Include="Images\alt_01.JPG" />
+    <Resource Include="Images\anim01.JPG" />
+    <Resource Include="Images\anim02.JPG" />
+    <Resource Include="Images\anim03.JPG" />
+    <Resource Include="Images\anim04.JPG" />
+    <Resource Include="Images\Background_Sketchbook.png" />
+    <Resource Include="Images\Background.png" />
+    <Resource Include="Images\circle1.png" />
+    <Resource Include="Images\hardware_012.JPG" />
+    <Resource Include="Images\Layer01b.png" />
+    <Resource Include="Images\Layer02_0.png" />
+    <Resource Include="Images\Layer02_1.png" />
+    <Resource Include="Images\Layer02_2.png" />
+    <Resource Include="Images\Layer02_3.png" />
+    <Resource Include="Images\Layer03.png" />
+    <Resource Include="Images\Layer03_2.png" />
+    <Resource Include="Images\Layer03_1.png" />
+    <Resource Include="Images\Layer04.png" />
+    <Resource Include="Images\Layer01.png" />
+    <Resource Include="Images\Layer12.png" />
+    <Resource Include="Images\Layer13.png" />
+    <Resource Include="Images\Layer13_0.png" />
+    <Resource Include="Images\Layer19.png" />
+    <Resource Include="Images\Layer02.png" />
+    <Resource Include="Images\link01.PNG" />
+    <Resource Include="Images\link02.PNG" />
+    <Resource Include="Images\link03.PNG" />
+    <Resource Include="Images\logo2.PNG" />
+    <Resource Include="Images\logo_12.PNG" />
+    <Resource Include="Images\logo_22.PNG" />
+    <Resource Include="Images\mouseWheel.png" />
+    <Resource Include="Images\sketch01.jpg" />
+    <Resource Include="Images\sketch02.JPG" />
+    <Resource Include="Sketch.Flow" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignTimeOnly Include="SampleData\GamesSampleDataSource\GamesSampleDataSource.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Feedback Files\MyFeedback.feedback" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendResources", "BlendResources\BlendResources.csproj", "{17d5e89c-86be-4d6f-9aa6-5fc7185023a8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17D5E89C-86BE-4D6F-9AA6-5FC7185023A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D5E89C-86BE-4D6F-9AA6-5FC7185023A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D5E89C-86BE-4D6F-9AA6-5FC7185023A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D5E89C-86BE-4D6F-9AA6-5FC7185023A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

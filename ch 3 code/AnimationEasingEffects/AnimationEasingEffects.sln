@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationEasingEffects", "AnimationEasingEffects\AnimationEasingEffects.csproj", "{fcd3cef9-87f6-4c05-85e5-868a5e72e4c1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCD3CEF9-87F6-4C05-85E5-868A5E72E4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3CEF9-87F6-4C05-85E5-868A5E72E4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD3CEF9-87F6-4C05-85E5-868A5E72E4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD3CEF9-87F6-4C05-85E5-868A5E72E4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

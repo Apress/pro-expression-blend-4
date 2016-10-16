@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformations", "Transformations\Transformations.csproj", "{9eef0a14-3eb3-4e3a-848f-30377bf0aa34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EEF0A14-3EB3-4E3A-848F-30377BF0AA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEF0A14-3EB3-4E3A-848F-30377BF0AA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEF0A14-3EB3-4E3A-848F-30377BF0AA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEF0A14-3EB3-4E3A-848F-30377BF0AA34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Inventory>
+  <Product ProductID ="0">
+    <Cost>5.00</Cost>
+    <Description>
+      Eight Times the sugar and twice the caffeine
+    </Description>
+    <Name>Super Spazz Soda Pop</Name>
+    <HotItem>true</HotItem>	
+  </Product>
+  <Product ProductID ="1">
+    <Cost>10.00</Cost>
+    <Description>A soothing night time cookie</Description>
+    <Name>Sleepy Time Cookies</Name>
+    <HotItem>true</HotItem>		
+  </Product>
+  <Product ProductID ="2">
+    <Cost>15.00</Cost>
+    <Description>It's Tofu, what can you say?</Description>
+    <Name>Joe's Tofu</Name>
+    <HotItem>false</HotItem>		
+  </Product>
+</Inventory>

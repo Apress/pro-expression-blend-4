@@ -1,0 +1,522 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity"
+	x:Class="PCGamingSketchScreens.Screen_1_8"
+	Width="800" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="_SketchFlowAnimation_SketchFlowAnimation1" d:IsSketchFlowAnimation="True">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame1"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.5000000" To="SketchFlowAnimationFrame1"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.2000000" To="SketchFlowAnimationFrame2"/>
+					<VisualTransition From="SketchFlowAnimationFrame1" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame2">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.5000000" To="SketchFlowAnimationFrame3"/>
+					<VisualTransition From="SketchFlowAnimationFrame2" GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame3"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.2000000" To="SketchFlowAnimationFrame4"/>
+					<VisualTransition From="SketchFlowAnimationFrame3" GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame4"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:02" To="SketchFlowAnimationFrame5"/>
+					<VisualTransition From="SketchFlowAnimationFrame4" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame5">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame"/>
+					<VisualTransition From="SketchFlowAnimationFrame5" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.5000000" To="SketchFlowAnimationFrame6"/>
+					<VisualTransition From="SketchFlowAnimationFrame" GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame6"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00.2000000" To="SketchFlowAnimationFrame7"/>
+					<VisualTransition From="SketchFlowAnimationFrame6" GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame7"/>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:00" To="SketchFlowAnimationFrame8"/>
+					<VisualTransition From="SketchFlowAnimationFrame7" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame8">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes1" GeneratedDuration="00:00:01" To="SketchFlowAnimationFrame9"/>
+					<VisualTransition From="SketchFlowAnimationFrame8" GeneratedDuration="00:00:00.5000000" To="SketchFlowAnimationFrame9">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="holdtimes1"/>
+				<VisualState x:Name="SketchFlowAnimationFrame1"/>
+				<VisualState x:Name="SketchFlowAnimationFrame2">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-214"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-248"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame3">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-211"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-246"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-244"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-210"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame4">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-214"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-248"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-246"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-213"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame5">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-115"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-16"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-14"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-114"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-300"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-195"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-202"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-194"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-300"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame6">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-193"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-194"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-300"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame7">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-195"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-202"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-194"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(Canvas.ZIndex)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Int32>1</System:Int32>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-300"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame8">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-115"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-22"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-20"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-114"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-73"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-550"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-298"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame9">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-115"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-22"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-20"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="click" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-114"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-73"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-200"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Halo2" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetZ)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-300"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="VivaPinata" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-298"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="_SketchFlowAnimation_base">
+					<Storyboard/>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Ellipse x:Name="shadow" Stroke="{x:Null}" StrokeThickness="2" Height="110" Margin="1,0,8,66" VerticalAlignment="Bottom">
+			<Ellipse.Fill>
+				<RadialGradientBrush>
+					<GradientStop Color="#FF727272"/>
+					<GradientStop Color="White" Offset="1"/>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		<TextBlock HorizontalAlignment="Center" Margin="0,17,0,0" Style="{StaticResource SubtitleCenter-Sketch}" VerticalAlignment="Top" Text="Simulation of 3D panels opening" TextWrapping="Wrap"/>
+		<Grid x:Name="KeybK6" Margin="323,87,139,99" Clip="M0.5,6.5 C0.5,3.1862915 3.1862915,0.5 6.5,0.5 L331.5,0.5 C334.81372,0.5 337.5,3.1862915 337.5,6.5 L337.5,407.5 C337.5,410.81372 334.81372,413.5 331.5,413.5 L6.5,413.5 C3.1862915,413.5 0.5,410.81372 0.5,407.5 z" Background="{x:Null}">
+			<Grid.Projection>
+				<PlaneProjection CenterOfRotationX="0" LocalOffsetX="-200" LocalOffsetZ="-400" RotationY="35"/>
+			</Grid.Projection>
+			<Rectangle x:Name="bg3" Fill="#FFC4CBE8" Stroke="{x:Null}" RadiusX="6" RadiusY="6"/>
+			<TextBlock x:Name="title3" HorizontalAlignment="Right" Margin="0,125,-76.333,189.968" Style="{StaticResource TitleLeft-Sketch}" Width="255.297" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" FontSize="53.333" Text="Keyboard K6" TextWrapping="Wrap" d:LayoutRounding="Auto">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<Path x:Name="figure3" Fill="#FF6E1EBB" Stretch="Fill" Stroke="#FF3B3B3B" Margin="-14.834,190.45,-16.334,-7.667" UseLayoutRounding="False" Data="M365.83298,392.49667 C365.49963,392.83002 86.601105,165.43488 62.500767,180.49759 C50.505817,187.99443 48.082455,287.1134 -0.50000507,291 L-0.83299756,409.99692 L367.33362,409.99692 z"/>
+			<TextBlock x:Name="desc3" Margin="22,18,145,199" Style="{StaticResource BodyLeft-Sketch}" Text="Aenean vulputate quam non lectus laoreet gravida. Cras turpis ante, pharetra non cursus euismod, placerat vulputate metus. Morbi lacinia, libero." TextWrapping="Wrap"/>
+			<Button x:Name="buy3" Background="#FFE4E4E4" HorizontalAlignment="Left" Margin="22,0,0,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="75" Content="Buy &gt;"/>
+			<Button x:Name="moreinfo3" Background="#FFE4E4E4" Margin="108,0,130,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Content="More Info..."/>
+			<Rectangle x:Name="border3" Fill="{x:Null}" Stroke="#FF686868" RadiusX="6" RadiusY="6" StrokeThickness="2" d:IsLocked="True"/>
+		</Grid>
+		<Grid x:Name="MouseX8" Margin="323,87,139,99" Clip="M0.5,6.5 C0.5,3.1862915 3.1862915,0.5 6.5,0.5 L331.5,0.5 C334.81372,0.5 337.5,3.1862915 337.5,6.5 L337.5,407.5 C337.5,410.81372 334.81372,413.5 331.5,413.5 L6.5,413.5 C3.1862915,413.5 0.5,410.81372 0.5,407.5 z" Background="{x:Null}">
+			<Grid.Projection>
+				<PlaneProjection CenterOfRotationX="0" LocalOffsetX="-200" LocalOffsetZ="-300" RotationY="35"/>
+			</Grid.Projection>
+			<Rectangle x:Name="bg2" Fill="#FF9ADBF2" Stroke="{x:Null}" RadiusX="6" RadiusY="6"/>
+			<TextBlock x:Name="title2" HorizontalAlignment="Right" Margin="0,125,-76.333,189.968" Style="{StaticResource TitleLeft-Sketch}" Width="255.297" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" FontSize="64" Text="Mouse X8" TextWrapping="Wrap" d:LayoutRounding="Auto">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<Path x:Name="figure2" Fill="#FF1E74BB" Stretch="Fill" Stroke="#FF3B3B3B" Margin="-14.834,145.388,-16.334,-7.667" UseLayoutRounding="False" Data="M362.49966,369.16348 C362.16632,369.49683 242.50011,385.16336 195.16695,301.16382 C169.29874,255.25693 185.0623,145.88011 158.50041,137.83105 C127.29346,128.3744 69.934502,142.10185 45.834164,157.16457 C33.839214,164.66141 48.082455,287.1134 -0.50000507,291 L-0.83299756,409.99692 L367.33362,409.99692 z"/>
+			<TextBlock x:Name="desc2" Margin="22,18,145,199" Style="{StaticResource BodyLeft-Sketch}" Text="Aenean vulputate quam non lectus laoreet gravida. Cras turpis ante, pharetra non cursus euismod, placerat vulputate metus. Morbi lacinia, libero." TextWrapping="Wrap"/>
+			<Button x:Name="buy2" Background="#FFE4E4E4" HorizontalAlignment="Left" Margin="22,0,0,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="75" Content="Buy &gt;"/>
+			<Button x:Name="moreinfo2" Background="#FFE4E4E4" Margin="108,0,130,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Content="More Info..."/>
+			<Rectangle x:Name="border2" Fill="{x:Null}" Stroke="#FF686868" RadiusX="6" RadiusY="6" StrokeThickness="2" d:IsLocked="True"/>
+		</Grid>
+		<Grid x:Name="VivaPinata" Margin="323,87,139,99" Clip="M0.5,6.5 C0.5,3.1862915 3.1862915,0.5 6.5,0.5 L331.5,0.5 C334.81372,0.5 337.5,3.1862915 337.5,6.5 L337.5,407.5 C337.5,410.81372 334.81372,413.5 331.5,413.5 L6.5,413.5 C3.1862915,413.5 0.5,410.81372 0.5,407.5 z" Background="{x:Null}">
+			<Grid.Projection>
+				<PlaneProjection CenterOfRotationX="0" LocalOffsetX="-200" LocalOffsetZ="-200" RotationY="35"/>
+			</Grid.Projection>
+			<Rectangle x:Name="bg1" Fill="#FFEEE698" Stroke="{x:Null}" RadiusX="6" RadiusY="6"/>
+			<TextBlock x:Name="title1" HorizontalAlignment="Right" Margin="0,125,-76.333,189.968" Style="{StaticResource TitleLeft-Sketch}" Width="255.297" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" FontSize="64" Text="Viva Piñata" TextWrapping="Wrap" d:LayoutRounding="Auto">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<Path x:Name="figure1" Fill="#FFF6B919" Stretch="Fill" Stroke="#FF929292" Margin="-14.834,145.388,-16.334,-7.667" UseLayoutRounding="False" Data="M362.49966,369.16348 C362.16632,369.49683 297.36768,314.64178 252.50006,307.16385 C220.84941,301.88873 189.82327,237.69263 195.8336,221.16422 C213.84125,171.6432 140.94475,271.6528 109.16726,227.16434 C91.873787,202.95348 185.0623,145.88011 158.50041,137.83105 C127.29346,128.3744 69.934502,142.10185 45.834164,157.16457 C33.839214,164.66141 29,192.3264 29,204 C29,213.235 40.732243,217.73224 46,223 C63.530392,240.5304 80.103836,283.82532 70.50074,299.83047 C44.822544,342.62747 48.082455,287.1134 -0.50000507,291 L-0.83299756,409.99692 L367.33362,409.99692 z"/>
+			<TextBlock x:Name="desc1" Margin="22,18,145,199" Style="{StaticResource BodyLeft-Sketch}" Text="Nam ullamcorper sem consequat mi gravida egestas. Praesent sagittis gravida justo vitae convallis. In convallis, quam vel adipiscing dignissim." TextWrapping="Wrap"/>
+			<Button x:Name="buy1" Background="#FFE4E4E4" HorizontalAlignment="Left" Margin="22,0,0,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="75" Content="Buy &gt;"/>
+			<Button x:Name="moreinfo1" Background="#FFE4E4E4" Margin="108,0,130,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Content="More Info..."/>
+			<Rectangle x:Name="border1" Fill="{x:Null}" Stroke="#FF686868" RadiusX="6" RadiusY="6" StrokeThickness="2" d:IsLocked="True"/>
+		</Grid>
+		<Grid x:Name="Halo2" Margin="290,87,172,99" Clip="M0.5,6.5 C0.5,3.1862915 3.1862915,0.5 6.5,0.5 L331.5,0.5 C334.81372,0.5 337.5,3.1862915 337.5,6.5 L337.5,407.5 C337.5,410.81372 334.81372,413.5 331.5,413.5 L6.5,413.5 C3.1862915,413.5 0.5,410.81372 0.5,407.5 z" Background="{x:Null}">
+			<Grid.Projection>
+				<PlaneProjection CenterOfRotationX="0" LocalOffsetX="-200" LocalOffsetZ="-100" RotationY="35"/>
+			</Grid.Projection>
+			<Rectangle x:Name="bg" Fill="#FFF0D8D8" Stroke="{x:Null}" RadiusX="6" RadiusY="6"/>
+			<TextBlock x:Name="title" HorizontalAlignment="Right" Margin="0,111.666,-61.667,181.968" Style="{StaticResource TitleLeft-Sketch}" Width="255.297" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" FontSize="96" Text="Halo 2" TextWrapping="Wrap" d:LayoutRounding="Auto">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<Path x:Name="figure" Fill="#FFD26060" Stretch="Fill" Stroke="#FF929292" Margin="-14.834,167.464,-16.334,-7.667" UseLayoutRounding="False" Data="M367.33362,296.99759 C367.00027,297.33093 245.8676,337.47794 201,330 C169.34935,324.72488 151.98967,300.52841 158,284 C176.00764,234.47899 224.77748,248.48848 193,204 C175.70653,179.78914 161.56189,173.04906 135,165 C103.79305,155.54335 88.100342,151.93729 64,167 C52.005047,174.49684 29,192.3264 29,204 C29,213.235 40.732243,217.73224 46,223 C63.530392,240.5304 70.603096,246.99484 61,263 C35.321804,305.797 48.082455,287.1134 -0.50000507,291 L-0.83299756,409.99692 L367.33362,409.99692 z"/>
+			<TextBlock x:Name="desc" Margin="22,18,145,199" Style="{StaticResource BodyLeft-Sketch}" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie, mauris in semper ultricies, lorem risus molestie lectus, nec faucibus leo neque at nulla." TextWrapping="Wrap"/>
+			<Button x:Name="buy" Background="#FFE4E4E4" HorizontalAlignment="Left" Margin="22,0,0,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="75" Content="Buy &gt;"/>
+			<Button x:Name="moreinfo" Background="#FFE4E4E4" Margin="108,0,130,14" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Content="More Info..."/>
+			<Rectangle x:Name="border" Fill="{x:Null}" Stroke="#FF686868" RadiusX="6" RadiusY="6" StrokeThickness="2"/>
+		</Grid>
+		<Canvas x:Name="click" Height="96" HorizontalAlignment="Right" Margin="0,0,61,82" VerticalAlignment="Bottom" Width="96" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="40.275" HorizontalAlignment="Right" Width="2" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="46.191" Canvas.Top="-0.025" Data="M48,44.5 L48,-0.025273722"/>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="42.525" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="46.09" Canvas.Top="50.5" Data="M48,44.5 L48,-0.025273722"/>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="41.191" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="45.168" Canvas.Top="2.16" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform X="-24.262" Y="24.262"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="40.357" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="48.919" Canvas.Top="51.065" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform X="24.262" Y="-24.262"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="44.525" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="45.168" Canvas.Top="2.31" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-135"/>
+						<TranslateTransform X="-17.15653096217823" Y="41.418116748615859"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="44.525" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="50.919" Canvas.Top="45.834" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-135"/>
+						<TranslateTransform X="17.15653096217823" Y="-41.418116748615859"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="44.525" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="43.501" Canvas.Top="2.31" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-45"/>
+						<TranslateTransform X="-17.155116166686646" Y="2.1043947027836936"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Path Fill="{x:Null}" Stretch="Fill" Stroke="#FFEE2222" StrokeThickness="5" Height="44.525" HorizontalAlignment="Right" Width="2" UseLayoutRounding="False" Canvas.Left="49.003" Canvas.Top="45.834" Data="M48,44.5 L48,-0.025273722" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-45"/>
+						<TranslateTransform X="17.155116166686646" Y="-2.1043947027836936"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Ellipse Fill="{x:Null}" Stroke="#FFEE2222" StrokeThickness="5" Height="13" Width="13" Canvas.Left="42" Canvas.Top="39"/>
+		</Canvas>
+		<Grid x:Name="Arrow" Height="68" HorizontalAlignment="Right" Margin="0,0,64,64" VerticalAlignment="Bottom" Width="44" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Path Fill="Black" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Margin="5,3,-0.762,0.331" UseLayoutRounding="False" Data="M687.33331,359.66718 L687,286.33328 L746.66669,340.00037 L722,341.0004 L742,376.00034 L727.66656,384.00058 L706.6665,347.33368 z" Opacity="0.25"/>
+			<Path Fill="White" Stretch="Fill" Stroke="Black" StrokeThickness="2" Margin="0,0,4.238,3.331" UseLayoutRounding="False" Data="M687.33331,359.66718 L687,286.33328 L746.66669,340.00037 L722,341.0004 L742,376.00034 L727.66656,384.00058 L706.6665,347.33368 z"/>
+		</Grid>
+		<Button HorizontalAlignment="Center" Margin="0,0,0,20" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="220" Content="Play SketchFlow Animation">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:PlaySketchFlowAnimationAction SketchFlowAnimation="_SketchFlowAnimation_SketchFlowAnimation1" TargetScreen="PCGamingSketchScreens.Screen_1_8"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>

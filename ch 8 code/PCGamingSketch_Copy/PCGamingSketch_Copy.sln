@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCGamingSketch", "PCGamingSketch\PCGamingSketch.csproj", "{8360f7ee-8f04-4284-83d1-beba7fd26d70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCGamingSketchScreens", "PCGamingSketch\PCGamingSketchScreens\PCGamingSketchScreens.csproj", "{fd7cd28f-13da-4816-8917-946b945a3d4f}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8360F7EE-8F04-4284-83D1-BEBA7FD26D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8360F7EE-8F04-4284-83D1-BEBA7FD26D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8360F7EE-8F04-4284-83D1-BEBA7FD26D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8360F7EE-8F04-4284-83D1-BEBA7FD26D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7CD28F-13DA-4816-8917-946B945A3D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7CD28F-13DA-4816-8917-946B945A3D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7CD28F-13DA-4816-8917-946B945A3D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7CD28F-13DA-4816-8917-946B945A3D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

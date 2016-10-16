@@ -1,0 +1,15 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:Microsoft_Expression_Prototyping_SketchControls="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls"
+	x:Class="PCGamingSketchScreens.Screen_1"
+	Width="800" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Style="{StaticResource Rectangle-Sketch}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="579" Height="99"/>
+		<TextBlock Height="51" HorizontalAlignment="Stretch" Margin="0" Style="{StaticResource TitleCenter-Sketch}" VerticalAlignment="Center" Text="SKETCH STUDIES FOR PC GAMING" TextWrapping="Wrap"/>
+	</Grid>
+</UserControl>

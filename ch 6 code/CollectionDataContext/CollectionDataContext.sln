@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionDataContext", "CollectionDataContext\CollectionDataContext.csproj", "{37b37cff-ae31-4c1f-8e77-6340a55d1550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37B37CFF-AE31-4C1F-8E77-6340A55D1550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B37CFF-AE31-4C1F-8E77-6340A55D1550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B37CFF-AE31-4C1F-8E77-6340A55D1550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B37CFF-AE31-4C1F-8E77-6340A55D1550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

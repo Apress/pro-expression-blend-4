@@ -1,0 +1,33 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WpfStylesWithBlend.App"
+	StartupUri="MainWindow.xaml">
+	<Application.Resources>
+		
+		<ResourceDictionary>
+		<ResourceDictionary.MergedDictionaries>
+			<ResourceDictionary Source="Simple Styles.xaml"/>
+		</ResourceDictionary.MergedDictionaries>		
+			<!-- Resources scoped at the Application level should be defined here. -->
+			<Style x:Key="firstButtonStyle" TargetType="{x:Type Button}">
+				<Setter Property="Background" Value="#FF154BD0"/>
+				<Setter Property="BorderBrush" Value="#FFE20C0C"/>
+				<Setter Property="FontSize" Value="24"/>
+				<Setter Property="FontFamily" Value="Showcard Gothic"/>
+				<Setter Property="Foreground">
+					<Setter.Value>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FF26D096" Offset="0"/>
+							<GradientStop Color="#FFEFE710" Offset="1"/>
+						</LinearGradientBrush>
+					</Setter.Value>
+				</Setter>
+				<Setter Property="BorderThickness" Value="5"/>
+				<Setter Property="Height" Value="50"/>
+				<Setter Property="Width" Value="140"/>
+				<Setter Property="FontStyle" Value="Italic"/>
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

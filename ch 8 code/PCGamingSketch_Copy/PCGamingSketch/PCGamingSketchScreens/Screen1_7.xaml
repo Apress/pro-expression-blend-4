@@ -1,0 +1,59 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:Microsoft_Expression_Prototyping_SketchControls="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity"
+	x:Class="PCGamingSketchScreens.Screen_1_7"
+	Width="800" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Margin="25,19,0,0" Style="{StaticResource TitleLeft-Sketch}" VerticalAlignment="Top" Text="Game Details" TextWrapping="Wrap"/>
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Background="#FFE0E0E0" BorderBrush="#FF7C7C7C" Foreground="#FF3F3F3F" Margin="27,76,179,263" Style="{StaticResource Rectangle-Sketch}"/>
+		<Button HorizontalAlignment="Left" Margin="27,0,0,229" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="54" Content="&lt;&lt;"/>
+		<Button HorizontalAlignment="Left" Margin="85,0,0,229" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="54" Content="&lt;"/>
+		<Button HorizontalAlignment="Left" Margin="143,0,0,229" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="54" Content="PLAY"/>
+		<Button HorizontalAlignment="Left" Margin="201,0,0,229" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="54" Content="&gt;"/>
+		<Button HorizontalAlignment="Left" Margin="259,0,0,229" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="54" Content="&gt;&gt;"/>
+		<TextBlock HorizontalAlignment="Right" Margin="0,0,351,232" Style="{StaticResource BodyCenter-Sketch}" VerticalAlignment="Bottom" Text="Volume" TextWrapping="Wrap"/>
+		<Slider HorizontalAlignment="Right" Margin="0,0,185,234" Style="{StaticResource Slider-Sketch}" VerticalAlignment="Bottom" Width="152"/>
+		<TextBlock HorizontalAlignment="Left" Margin="31,0,0,186" Style="{StaticResource SubtitleLeft-Sketch}" VerticalAlignment="Bottom" Text="Screenshots" TextWrapping="Wrap"/>
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Background="#FFE0E0E0" BorderBrush="#FF7C7C7C" Foreground="#FF3F3F3F" Margin="31,0,0,96" Style="{StaticResource Rectangle-Sketch}" Height="90" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="144"/>
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Background="#FFE0E0E0" BorderBrush="#FF7C7C7C" Foreground="#FF3F3F3F" Margin="180,0,0,96" Style="{StaticResource Rectangle-Sketch}" Height="90" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="144"/>
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Background="#FFE0E0E0" BorderBrush="#FF7C7C7C" Foreground="#FF3F3F3F" Margin="328,0,328,96" Style="{StaticResource Rectangle-Sketch}" Height="90" VerticalAlignment="Bottom"/>
+		<Microsoft_Expression_Prototyping_SketchControls:SketchRectangleSL Background="#FFE0E0E0" BorderBrush="#FF7C7C7C" Foreground="#FF3F3F3F" Margin="0,0,179,96" Style="{StaticResource Rectangle-Sketch}" Height="90" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="144"/>
+		<Button HorizontalAlignment="Right" Margin="0,0,130,21" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="105" Content="More info..." Height="35"/>
+		<Button HorizontalAlignment="Right" Margin="0,0,18,21" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="105" Content="Buy now &gt;" Height="35"/>
+		<ComboBox HorizontalAlignment="Right" Margin="0,76,18,0" Style="{StaticResource ComboBox-Sketch}" VerticalAlignment="Top" Width="153" SelectedIndex="0">
+			<ComboBoxItem Content="Halo" Style="{StaticResource ComboBoxItem-Sketch}"/>
+			<ComboBoxItem Content="Age of Empires" Style="{StaticResource ComboBoxItem-Sketch}"/>
+		</ComboBox>
+		<TextBlock HorizontalAlignment="Right" Margin="0,40,51,0" Style="{StaticResource SubtitleLeft-Sketch}" VerticalAlignment="Top" Text="Related Games" TextWrapping="Wrap"/>
+		<TextBlock HorizontalAlignment="Right" Margin="0,112,74,0" Style="{StaticResource SubtitleLeft-Sketch}" VerticalAlignment="Top" Text="Accessories" TextWrapping="Wrap"/>
+		<ComboBox HorizontalAlignment="Right" Margin="0,144,18,0" Style="{StaticResource ComboBox-Sketch}" VerticalAlignment="Top" Width="153" SelectedIndex="0">
+			<ComboBoxItem Content="SideWinder X8 Mouse" Style="{StaticResource ComboBoxItem-Sketch}"/>
+			<ComboBoxItem Content="SideWinder K6 Keyboard" Style="{StaticResource ComboBoxItem-Sketch}"/>
+		</ComboBox>
+		<TextBlock HorizontalAlignment="Right" Margin="0,188,61,0" Style="{StaticResource SubtitleLeft-Sketch}" VerticalAlignment="Top" Text="Achievements" TextWrapping="Wrap"/>
+		<ListBox HorizontalAlignment="Right" Margin="0,220,18,0" Style="{StaticResource ListBox-Sketch}" Width="151" Height="77" VerticalAlignment="Top">
+			<ListBoxItem Margin="0" Content="Cairo Station"/>
+			<ListBoxItem Margin="0" Content="Outskirts"/>
+			<ListBoxItem Margin="0" Content="Metropolis"/>
+			<ListBoxItem Margin="0" Content="The Arbiter"/>
+		</ListBox>
+		<Button HorizontalAlignment="Left" Margin="34,0,0,21" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="105" Content="Back" Height="35">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="PCGamingSketchScreens.Screen_1_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Right" Margin="0,0,74,255" Style="{StaticResource SubtitleLeft-Sketch}" VerticalAlignment="Bottom" Text="Community" TextWrapping="Wrap"/>
+		<RadioButton HorizontalAlignment="Right" Margin="0,0,59,229" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Bottom" Content="News by mail"/>
+		<RadioButton HorizontalAlignment="Right" Margin="0,0,26,202" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Bottom" Content="Get our RSS feed"/>
+		<RadioButton HorizontalAlignment="Right" Margin="0,0,37,175" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Bottom" Content="Promo &amp; events"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,0,18,135" Style="{StaticResource TextBox-Sketch}" VerticalAlignment="Bottom" Text="your email" TextWrapping="Wrap" Width="146"/>
+		<Button HorizontalAlignment="Right" Margin="0,0,59,96" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Width="108" Content="Subscribe &gt;"/>
+	</Grid>
+</UserControl>

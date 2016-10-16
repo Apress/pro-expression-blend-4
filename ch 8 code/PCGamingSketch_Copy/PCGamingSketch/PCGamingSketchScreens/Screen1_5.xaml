@@ -1,0 +1,378 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:PCGamingSketchScreens"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	x:Class="PCGamingSketchScreens.Screen_1_5"
+	Width="800" Height="600">
+
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			<DataTemplate x:Key="ItemTemplate">
+				<StackPanel/>
+			</DataTemplate>
+			<ItemsPanelTemplate x:Key="CircularItemsPanelTemplate">
+				<local:CircularPanel d:LayoutOverrides="Width, Height" AngleItem="29.5" Align="Center" InitialAngle="2"/>
+			</ItemsPanelTemplate>
+			<Style x:Key="ListBoxItemStyle1" TargetType="ListBoxItem">
+				<Setter Property="Padding" Value="3"/>
+				<Setter Property="HorizontalContentAlignment" Value="Left"/>
+				<Setter Property="VerticalContentAlignment" Value="Top"/>
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="BorderThickness" Value="1"/>
+				<Setter Property="TabNavigation" Value="Local"/>
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="ListBoxItem">
+							<local:CircularPanel AngleItem="7" Radius="83">
+								<VisualStateManager.VisualStateGroups>
+									<VisualStateGroup x:Name="CommonStates">
+										<VisualState x:Name="Disabled"/>
+										<VisualState x:Name="Normal"/>
+										<VisualState x:Name="MouseOver"/>
+									</VisualStateGroup>
+									<VisualStateGroup x:Name="FocusStates">
+										<VisualState x:Name="Focused"/>
+										<VisualState x:Name="Unfocused"/>
+									</VisualStateGroup>
+									<VisualStateGroup x:Name="SelectionStates">
+										<VisualState x:Name="Unselected"/>
+										<VisualState x:Name="Selected"/>
+										<VisualState x:Name="SelectedUnfocused"/>
+									</VisualStateGroup>
+								</VisualStateManager.VisualStateGroups>
+								<TextBlock Text="{Binding Title}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="16" Width="223.679" Foreground="#FF1485C5" FontWeight="Bold"/>
+								<TextBlock Text="{Binding Line1}" HorizontalAlignment="Left" Width="223.679" FontSize="10.667" Foreground="#FF636363"/>
+								<TextBlock Text="{Binding Line2}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="16" Width="223.679" FontSize="10.667" Foreground="#FF636363"/>
+								<TextBlock Text="{Binding Line3}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="16" Width="223.679" FontSize="10.667" Foreground="#FF636363"/>
+							</local:CircularPanel>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+			<Style x:Key="HardwareListBoxItemStyle" TargetType="ListBoxItem">
+				<Setter Property="Padding" Value="3"/>
+				<Setter Property="HorizontalContentAlignment" Value="Left"/>
+				<Setter Property="VerticalContentAlignment" Value="Top"/>
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="BorderThickness" Value="1"/>
+				<Setter Property="TabNavigation" Value="Local"/>
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="ListBoxItem">
+							<local:CircularPanel AngleItem="7" Radius="83">
+								<VisualStateManager.VisualStateGroups>
+									<VisualStateGroup x:Name="CommonStates">
+										<VisualState x:Name="Disabled"/>
+										<VisualState x:Name="Normal"/>
+										<VisualState x:Name="MouseOver"/>
+									</VisualStateGroup>
+									<VisualStateGroup x:Name="FocusStates">
+										<VisualState x:Name="Focused"/>
+										<VisualState x:Name="Unfocused"/>
+									</VisualStateGroup>
+									<VisualStateGroup x:Name="SelectionStates">
+										<VisualState x:Name="Unselected"/>
+										<VisualState x:Name="Selected"/>
+										<VisualState x:Name="SelectedUnfocused"/>
+									</VisualStateGroup>
+								</VisualStateManager.VisualStateGroups>
+								<TextBlock Text="{Binding Title}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="16" Width="223.679" FontWeight="Bold" Foreground="#FFDA2626"/>
+								<TextBlock Text="{Binding Line1}" HorizontalAlignment="Left" Width="223.679" Foreground="#FF636363"/>
+								<TextBlock Text="{Binding Line2}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="16" Width="223.679" Foreground="#FF636363"/>
+								<TextBlock Text="{Binding Line3}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="16" Width="223.679" Foreground="#FF636363"/>
+							</local:CircularPanel>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource GamesSampleDataSource}}">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="Navigation">
+				<VisualState x:Name="GoToInternal">
+					<Storyboard>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="-0.499999999999992,346">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="-0.5,222">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="-0.500000000000021,108">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.StartPoint)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="443.5,222">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point1)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="443.5,339">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point2)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="443.5,94">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point3)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="443.5,222">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point2)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="97,1.53075794227797E-14">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point3)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="222,0">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point1)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="334,0">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point2)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="346,444">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point3)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="222,444">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point1)">
+							<EasingPointKeyFrame KeyTime="00:00:00.5000000" Value="108,444">
+								<EasingPointKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingPointKeyFrame.EasingFunction>
+							</EasingPointKeyFrame>
+						</PointAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Circle" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<CubicEase/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid2" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Ellipse Margin="118,18,118,18" Fill="{x:Null}" StrokeThickness="2" Opacity="0.55">
+			<Ellipse.Stroke>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#006C6C6C" Offset="0.137"/>
+					<GradientStop Color="#006C6C6C" Offset="0.863"/>
+					<GradientStop Color="#FF6C6C6C" Offset="0.401"/>
+					<GradientStop Color="#FF6C6C6C" Offset="0.604"/>
+				</LinearGradientBrush>
+			</Ellipse.Stroke>
+		</Ellipse>
+		<Ellipse Margin="159,59,159,59" Fill="#FFE8E8E8" Stroke="{x:Null}" StrokeThickness="2"/>
+		<Ellipse Margin="177,77,177,77" Fill="#FFFFFFFF" Stroke="{x:Null}" StrokeThickness="2"/>
+		<Image Height="22" HorizontalAlignment="Left" Margin="84,40,0,0" VerticalAlignment="Top" Width="124" Opacity="0.6" RenderTransformOrigin="0.5,0.5" Source="Images/logo_12.PNG" Stretch="Fill">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image Height="27" HorizontalAlignment="Right" Margin="0,39,75,0" VerticalAlignment="Top" Width="122" Opacity="0.7" RenderTransformOrigin="0.5,0.5" Source="Images/logo_22.PNG" Stretch="Fill">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Grid x:Name="Circle" Margin="150,50,150,50" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform x:Name="RotateList" Angle="0"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<i:Interaction.Behaviors>
+				<local:WheelSpinner/>
+			</i:Interaction.Behaviors>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ic:GoToStateAction StateName="GoToInternal"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Grid.Background>
+				<SolidColorBrush/>
+			</Grid.Background>
+			<Path Height="221.994" Margin="27.051,0,26.949,27.006" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0" Fill="#FFDADADA" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Data="M1,1 L444.89886,1 L444.66055,10.424103 C441.59216,70.965164 414.27032,125.1069 372.21722,163.32843 C351.19058,182.43925 326.48193,197.56944 299.28046,207.52908 C272.07932,217.48903 241.79608,222.24554 211.52533,220.71112 C150.9855,217.64281 96.842773,190.32117 58.620998,148.26779 C39.510197,127.24117 24.379972,102.53217 14.42033,75.331055 C9.4404573,61.730415 5.7531934,47.50655 3.5073657,32.808411 C2.3844519,25.459351 1.621891,17.991699 1.2382948,10.424103 z" IsHitTestVisible="False">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-36.626"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<ListBox x:Name="Games" Background="{x:Null}" BorderBrush="{x:Null}" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" ItemsSource="{Binding Collection}" ItemTemplate="{StaticResource ItemTemplate}" ItemsPanel="{StaticResource CircularItemsPanelTemplate}" ItemContainerStyle="{StaticResource ListBoxItemStyle1}" IsHitTestVisible="False">
+				<ListBox.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="146.924"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</ListBox.RenderTransform>
+			</ListBox>
+			<ListBox x:Name="Hardware" Background="{x:Null}" BorderBrush="{x:Null}" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" ItemsSource="{Binding Collection}" ItemTemplate="{StaticResource ItemTemplate}" ItemsPanel="{StaticResource CircularItemsPanelTemplate}" ItemContainerStyle="{StaticResource HardwareListBoxItemStyle}" IsHitTestVisible="False">
+				<ListBox.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-33.702"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</ListBox.RenderTransform>
+			</ListBox>
+			
+		</Grid>
+		<Image x:Name="image" Source="Images/hardware_012.JPG" Stretch="Fill" Width="445" Height="445" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="1">
+			<Image.Clip>
+				<PathGeometry>
+					<PathFigure IsClosed="True" StartPoint="296.5,222">
+						<BezierSegment Point1="296.5,263.145202636719" Point2="263.145202636719,296.5" Point3="222,296.5"/>
+						<BezierSegment Point1="180.854782104492,296.5" Point2="147.5,263.145202636719" Point3="147.5,222"/>
+						<BezierSegment Point1="147.5,180.854782104492" Point2="180.854782104492,147.5" Point3="222,147.5"/>
+						<BezierSegment Point1="263.145202636719,147.5" Point2="296.5,180.854782104492" Point3="296.5,222"/>
+					</PathFigure>
+				</PathGeometry>
+			</Image.Clip>
+		</Image>
+		<Ellipse x:Name="ellipse" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Fill="{x:Null}" Stroke="#FF4F4F4F"/>
+		<Ellipse Margin="177,77,177,77" Fill="{x:Null}" Stroke="#FF9F9F9F" StrokeThickness="2"/>
+		<Grid x:Name="grid" Margin="111,11,111,11" Opacity="0" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Path HorizontalAlignment="Left" Margin="11,114.84,0,134.16" Width="102" Fill="#FF000000" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Data="M63.163925,0 L102.31153,34.085651 L92.662903,47.332016 C78.729912,68.195068 68.117165,91.462341 61.579536,116.3794 C58.310799,128.83784 56.060829,141.70859 54.924065,154.89763 C54.355667,161.49207 54.06559,168.16609 54.065575,174.90778 C54.065636,217.34636 65.561363,257.10126 85.609947,291.23151 L93.323463,303.44449 L47.640732,329.2287 L39.486374,316.68295 C14.425583,275.31744 7.9117608E-06,226.79561 0,174.90781 C1.5824067E-05,109.44611 22.9582,49.346466 61.265327,2.2108941 z" RenderTransformOrigin="2.725,0.52" Opacity="0.2"/>
+			<Path Margin="30.11,30,137.89,76" RenderTransformOrigin="0.631372901858045,0.548958166518484" Fill="#FFE40000" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Data="M258.99545,1 C294.61786,0.99995613 328.55411,8.2193918 359.42053,21.274677 C374.85382,27.802332 389.51978,35.789009 403.24554,45.061905 L409.20996,49.303261 L399.9855,62.373959 L394.29871,58.329987 C368.54953,40.934185 339.27274,28.363924 307.76608,21.916603 C292.01279,18.692957 275.70187,16.999994 258.99545,16.999994 C125.34409,16.999994 16.995277,125.34643 16.995461,259 C16.995369,325.82507 44.082558,386.32495 87.875885,430.11877 C93.350082,435.59296 99.085297,440.80615 105.06129,445.73804 C108.04928,448.20398 111.09747,450.59958 114.20331,452.92233 L120.96694,457.73212 L111.74248,470.8028 L104.62921,465.74442 C51.651127,426.12439 14.408327,366.6188 3.9681559,298.29077 C1.3581635,281.2092 0.43956041,263.31284 1.331157,245.72328 C4.8976593,175.3643 36.649826,112.44244 85.521736,68.023422 C109.95779,45.813755 138.67342,28.230062 170.28606,16.655277 C186.09244,10.867805 202.62279,6.5826721 219.70439,3.9727244 C228.24527,2.6677032 236.92389,1.7815024 245.71873,1.3357034 C250.11615,1.1127969 254.54263,0.99999452 258.99545,1 z">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="0"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Path.RenderTransform>
+				<Path.OpacityMask>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF000000"/>
+						<GradientStop Color="#00FFFFFF" Offset="0.203"/>
+					</LinearGradientBrush>
+				</Path.OpacityMask>
+			</Path>
+			<Path Height="105.151" HorizontalAlignment="Left" Margin="17.543,0,0,128.16" VerticalAlignment="Bottom" Width="86.496" RenderTransformOrigin="3.13777954735698,-0.501837423302422" Fill="#FF000000" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Data="M52.670765,0 L55.587112,12.172409 C60.950798,31.66877 68.812904,50.127293 78.80658,67.180405 L86.496613,79.384903 L40.952988,105.1512 L32.823456,92.614182 C20.331268,71.945946 10.489686,49.489536 3.7712059,25.718964 L0,10.393753 z" Opacity="0.2">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="167.787"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+		</Grid>
+		<Grid x:Name="grid1" Height="269" HorizontalAlignment="Right" Margin="0,0,153,21" VerticalAlignment="Bottom" Width="228" Opacity="1" IsHitTestVisible="False">
+			<Path x:Name="path" Opacity="0" Fill="#FF888888" Stretch="Fill" Stroke="#FF353535" StrokeThickness="1" Data="M8.5,0 L190.5,0 L228,38.5 L228,256 L216.5,269 L17.5,269 L0,250.5 L0,8.5 z" RenderTransformOrigin="0,0">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0" ScaleY="0"/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Grid x:Name="grid2" Margin="6,6,15,3" Opacity="0" Background="{x:Null}">
+				<Rectangle Fill="#FF707070" Stroke="{x:Null}" Margin="-4" Opacity="0.85"/>
+				<Image Height="19.998" Margin="0,0,27,0" VerticalAlignment="Top" Source="Images/logo2.PNG" Stretch="Fill"/>
+				<TextBlock Height="21" Margin="3,35,14,0" VerticalAlignment="Top" FontFamily="Portable User Interface" FontSize="12" FontWeight="Bold" Foreground="#FFFFFFFF" Text="X8 SideWinder(tm) Mouse" TextWrapping="Wrap"/>
+				<TextBlock Margin="3,55,14,69" FontFamily="Portable User Interface" FontSize="11" FontWeight="Normal" Foreground="#FFFFFFFF" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus quam sed odio. Morbi convallis arcu in neque. Maecenas ornare imperdiet enim. Praesent at diam. Nam laoreet, nunc condimentum semper mollis." TextWrapping="Wrap"/>
+				<Path Opacity="0.89" Fill="#FFDEDEDE" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="2" Data="M8.5,223 L120.5,223 L128,231.5 L128,259 L116.5,259 L7.5,259 L0,250.5 L0,231.5 z" Height="36" Margin="7,0,72,4" VerticalAlignment="Bottom"/>
+				<TextBlock Margin="13,0,4,37" FontFamily="Portable User Interface" FontSize="22" FontWeight="Bold" Foreground="#FFFFFFFF" Text="$29.99" TextWrapping="Wrap" Height="36" VerticalAlignment="Bottom"/>
+				<TextBlock Margin="17,0,0,0" FontFamily="Portable User Interface" FontSize="18" FontWeight="Bold" Foreground="#FF7A7A7A" Text="buy now..." TextWrapping="Wrap" Height="36" VerticalAlignment="Bottom"/>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl>

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTemplateByHand", "WpfTemplateByHand\WpfTemplateByHand.csproj", "{3a747754-6e72-4a67-afed-36b65370a537}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A747754-6E72-4A67-AFED-36B65370A537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A747754-6E72-4A67-AFED-36B65370A537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A747754-6E72-4A67-AFED-36B65370A537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A747754-6E72-4A67-AFED-36B65370A537}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

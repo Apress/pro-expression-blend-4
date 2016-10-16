@@ -1,0 +1,23 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Anno="http://schemas.microsoft.com/expression/blend/extensions/annotations/2008" mc:Ignorable="d Anno"
+	x:Class="WpfStyleByHand.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="633" Height="368">
+
+	<Anno:AnnotationManager.Annotations>
+		<Anno:Annotation AuthorInitials="AWT" Author="Andrew Troelsen" Left="575.5" SerialNumber="1" Top="-43" Timestamp="12/03/2010 15:54:33" Text="This example illustrates how to build a style by hand, and then how to use the Blend IDE to assign styles.&#xa;&#xa;This example also examines the role of &quot;default&quot; styles and the use of {x:Null} to opt out of a default style. &#xd;&#xa;&#xd;&#xa;When you run the program, nothing special happens.  But be sure to examine the XAML in the application"/>
+	</Anno:AnnotationManager.Annotations>
+
+	<Grid x:Name="LayoutRoot">
+		<Button Content="My Button" Cursor="Help"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="8,8,0,0" Style="{DynamicResource BasicControlStyle}"/>
+		<Label Content="Some Simple Text" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,52,0,0" Style="{DynamicResource BasicControlStyle}"/>
+		<Button Content="Button!" Width="75" Margin="0,9.323,127,109.677" Height="Auto" Style="{DynamicResource BigGreenButton}" HorizontalAlignment="Right"/>
+		<Button Content="Tilt!" VerticalAlignment="Bottom" Width="Auto" Margin="217,0,231,214.04" Style="{DynamicResource TiltButton}"/>
+		<TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="I'm styled!" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height" Margin="47,0,0,18"/>
+		<TextBox TextWrapping="Wrap" Text="me too!" VerticalAlignment="Bottom" d:LayoutOverrides="Height" Margin="172,0,225,18"/>
+		<TextBox Style="{x:Null}" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Not me!" VerticalAlignment="Bottom" Margin="0,0,138,26.04"/>
+	</Grid>
+</Window>

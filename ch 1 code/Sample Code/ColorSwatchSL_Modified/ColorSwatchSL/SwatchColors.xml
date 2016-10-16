@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Swatches>
+  <Swatch>
+    <Theme>Red Fire</Theme>
+    <Color1>#FFDD0000</Color1>
+    <Color2>#FFBB0000</Color2>
+    <Color3>#FF990000</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Burned Red</Theme>
+    <Color1>#FF770000</Color1>
+    <Color2>#FF550000</Color2>
+    <Color3>#FF330000</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Light Red</Theme>
+    <Color1>#FFDD2222</Color1>
+    <Color2>#FFBB4444</Color2>
+    <Color3>#FF996666</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Swimming Pool</Theme>
+    <Color1>#FF778888</Color1>
+    <Color2>#FF55AAAA</Color2>
+    <Color3>#FF33CCCC</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Grass Green</Theme>
+    <Color1>#FF00DD00</Color1>
+    <Color2>#FF00BB00</Color2>
+    <Color3>#FF009900</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Deep Green</Theme>
+    <Color1>#FF007700</Color1>
+    <Color2>#FF005500</Color2>
+    <Color3>#FF003300</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Light Green</Theme>
+    <Color1>#FF22DD22</Color1>
+    <Color2>#FF44BB44</Color2>
+    <Color3>#FF669966</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Violet</Theme>
+    <Color1>#FF887788</Color1>
+    <Color2>#FFAA55AA</Color2>
+    <Color3>#FFCC33CC</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Strong Blue</Theme>
+    <Color1>#FF0000DD</Color1>
+    <Color2>#FF0000BB</Color2>
+    <Color3>#FF000099</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Dark Blue</Theme>
+    <Color1>#FF000077</Color1>
+    <Color2>#FF000055</Color2>
+    <Color3>#FF000033</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Light Blue</Theme>
+    <Color1>#FF2222DD</Color1>
+    <Color2>#FF4444BB</Color2>
+    <Color3>#FF666699</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Dirt Yellow</Theme>
+    <Color1>#FF888877</Color1>
+    <Color2>#FFAAAA55</Color2>
+    <Color3>#FFCCCC33</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Blue-Violet</Theme>
+    <Color1>#FF6600DD</Color1>
+    <Color2>#FF6600BB</Color2>
+    <Color3>#FF660099</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Wine Violet</Theme>
+    <Color1>#FF660077</Color1>
+    <Color2>#FF660055</Color2>
+    <Color3>#FF660033</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Light Blue-Violet</Theme>
+    <Color1>#FF6622DD</Color1>
+    <Color2>#FF6644BB</Color2>
+    <Color3>#FFaa6699</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Dark Dirt-Yellow</Theme>
+    <Color1>#FF888800</Color1>
+    <Color2>#FFAAAA00</Color2>
+    <Color3>#FFCCCC00</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Ocean 1</Theme>
+    <Color1>#FF0066DD</Color1>
+    <Color2>#FF0066BB</Color2>
+    <Color3>#FF006699</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Ocean 2</Theme>
+    <Color1>#FF006677</Color1>
+    <Color2>#FF006655</Color2>
+    <Color3>#FF006633</Color3>
+  </Swatch>
+  <Swatch>
+    <Theme>Noir Shades</Theme>
+    <Color1>#FF222222</Color1>
+    <Color2>#FF444444</Color2>
+    <Color3>#FF666666</Color3>
+  </Swatch>
+</Swatches>

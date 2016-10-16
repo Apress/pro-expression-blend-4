@@ -1,0 +1,18 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+	x:Class="StyleTemplateFromGraphic.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Button Content="Button" Height="113" Margin="243,0,255,60" Style="{DynamicResource starButtonStyle}" VerticalAlignment="Bottom"/>
+		<ListBox Margin="243.823,71,255,208.899" Style="{DynamicResource wigglyListBoxStyle}" FontSize="16" FontStyle="Italic">
+			<ListBoxItem Content="Item One"/>
+			<ListBoxItem Content="Item Two"/>
+			<ListBoxItem Content="Item Three"/>
+		</ListBox>
+	</Grid>
+</Window>

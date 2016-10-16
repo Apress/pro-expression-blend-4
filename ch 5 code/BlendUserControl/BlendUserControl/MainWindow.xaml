@@ -1,0 +1,13 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:BlendUserControl"
+	x:Class="BlendUserControl.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+		<local:BubbleThoughsControl HorizontalAlignment="Left" Height="107" Margin="42,39,0,0" VerticalAlignment="Top" Width="233"/>
+	</Grid>
+</Window>

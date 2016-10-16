@@ -1,0 +1,56 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WPFAnimationTriggerApp.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+	
+	<!-- Recall! Storyboard objects are bundled as object resources -->
+	<Window.Resources>
+		<Storyboard x:Key="SpinButtonAnimation" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="btnMyButton">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-360.505"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="MenuItem.Click" SourceName="mnuPlay">
+			<BeginStoryboard x:Name="SpinButtonAnimation_BeginStoryboard" Storyboard="{StaticResource SpinButtonAnimation}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="MenuItem.Click" SourceName="mnuStop">
+			<StopStoryboard BeginStoryboardName="SpinButtonAnimation_BeginStoryboard"/>
+			<StopStoryboard BeginStoryboardName="SpinButtonAnimation_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="MenuItem.Click" SourceName="mnuPause">
+			<PauseStoryboard BeginStoryboardName="SpinButtonAnimation_BeginStoryboard"/>
+			<PauseStoryboard BeginStoryboardName="SpinButtonAnimation_BeginStoryboard"/>
+		</EventTrigger>
+	</Window.Triggers>
+	
+	<!-- This trigger will start the SpinButtonAnimation 
+	     when the Window loads into memory -->
+
+	<Grid x:Name="LayoutRoot">
+		
+		<!---->
+		<Button x:Name="btnMyButton" Content="I Spin!" Height="44.01" Margin="227.822,106.6,242.182,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Menu x:Name="mainMenuSystem" Height="35" VerticalAlignment="Top">
+			<MenuItem x:Name="mnuFile" Header="File" Height="35">
+				<MenuItem x:Name="mnuPlay" Header="Play!"/>
+				<MenuItem x:Name="mnuStop" Header="Stop!"/>
+				<MenuItem x:Name="mnuPause" Header="Pause!"/>
+			</MenuItem>
+		</Menu>
+	</Grid>
+</Window>

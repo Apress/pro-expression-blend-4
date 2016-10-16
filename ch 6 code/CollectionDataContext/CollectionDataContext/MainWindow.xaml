@@ -1,0 +1,46 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:CollectionDataContext" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d"
+	    x:Class="CollectionDataContext.MainWindow"
+	    x:Name="Window"
+	    Title="MainWindow"
+	    Width="640" Height="377" WindowStartupLocation="CenterScreen">
+
+	<Window.Resources>
+
+		<local:PurchaseOrders x:Key="PurchaseOrdersDataSource" d:IsDataSource="True"/>
+		<DataTemplate x:Key="PurchaseOrderTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Amount}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="PurchaseOrderTemplate1">
+			<StackPanel>
+				<TextBlock Text="{Binding Description}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="PurchaseOrderTemplate2">
+			<StackPanel>
+				<TextBlock Text="{Binding TotalCost}"/>
+			</StackPanel>
+		</DataTemplate>
+
+	</Window.Resources>
+
+	<Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource PurchaseOrdersDataSource}}">
+		<ListBox HorizontalAlignment="Left" ItemTemplate="{DynamicResource PurchaseOrderTemplate}" ItemsSource="{Binding}" Margin="8,8,0,0" Width="200" Height="76" VerticalAlignment="Top"/>
+		<ListBox ItemTemplate="{DynamicResource PurchaseOrderTemplate1}" ItemsSource="{Binding}" Margin="232,8,224,0" Height="76" VerticalAlignment="Top"/>
+		<ListBox HorizontalAlignment="Right" ItemTemplate="{DynamicResource PurchaseOrderTemplate2}" ItemsSource="{Binding}" Margin="0,8,8,0" Width="192" Height="76" VerticalAlignment="Top"/>
+		<DataGrid Margin="8,97,8,121" AutoGenerateColumns="False" ItemsSource="{Binding}" d:LayoutOverrides="VerticalAlignment">
+			<DataGrid.Columns>
+				<DataGridTextColumn Binding="{Binding Amount}" Header="Amount"/>
+				<DataGridTextColumn Binding="{Binding Description}" Header="Description"/>
+				<DataGridTextColumn Binding="{Binding TotalCost}" Header="TotalCost"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Button x:Name="btnAddNewObject" Content="Add New Test Object" HorizontalAlignment="Left" Margin="8,0,0,82.04" VerticalAlignment="Bottom" Width="192" Click="btnAddNewObject_Click"/>
+	</Grid>
+</Window>

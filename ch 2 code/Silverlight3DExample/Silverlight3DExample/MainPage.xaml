@@ -1,0 +1,18 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	x:Class="Silverlight3DExample.MainPage"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image x:Name="imgCoCoLoCo" Margin="162,18,162,185" Source="/CoCoLoCo.png" Stretch="Fill"/>
+		<Slider x:Name="sliderXChange" VerticalAlignment="Bottom" Height="23" Margin="213,0,0,133" ValueChanged="sliderXChange_ValueChanged" Maximum="180" Minimum="-30" SmallChange="1" HorizontalAlignment="Left" Width="253.98"/>
+		<Slider x:Name="sliderYChange" VerticalAlignment="Bottom" Height="23" Margin="213,0,0,84" Maximum="180" Minimum="-30" SmallChange="1" ValueChanged="sliderYChange_ValueChanged" HorizontalAlignment="Left" Width="253.98"/>
+		<Slider x:Name="sliderZChange" VerticalAlignment="Bottom" Height="23" Margin="213,0,0,35"  Maximum="-1.5" Minimum="-29.4" ValueChanged="sliderZChange_ValueChanged" LargeChange="0.1" Value="-15.5" HorizontalAlignment="Left" Width="253.98"/>
+		
+		<sdk:Label Content="X" HorizontalAlignment="Left" Height="23" Margin="179,0,0,133" VerticalAlignment="Bottom" Width="54.215" FontWeight="Bold"/>
+		<sdk:Label Content="Y" HorizontalAlignment="Left" Height="23" Margin="179,0,0,84" VerticalAlignment="Bottom" Width="54.215" FontWeight="Bold"/>
+		<sdk:Label Content="Z" HorizontalAlignment="Left" Height="23" Margin="179,0,0,35" VerticalAlignment="Bottom" Width="54.215" FontWeight="Bold"/>
+	</Grid>
+</UserControl>

@@ -1,0 +1,42 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="SimpleBlendAnimations.MainPage"
+	Width="640" Height="480" Loaded="UserControl_Loaded">
+	<UserControl.Resources>
+		<Storyboard x:Name="AnimateCircle" AutoReverse="True" RepeatBehavior="00:00:45">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="myCircle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="267"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="myCircle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="31"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="myCircle">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF1010F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:2" Value="#FFF110DE"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="myCircle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="84"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="100"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="myCircle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="84"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="150"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Ellipse x:Name="myCircle" Fill="#FF1010F1" HorizontalAlignment="Left" Height="84" Margin="50,64,0,0" Stroke="Black" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5">
+			<Ellipse.RenderTransform>
+				<CompositeTransform/>
+			</Ellipse.RenderTransform>
+		</Ellipse>
+		<Button x:Name="btnStartAnimation" Content="Start Animation!" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Width="124" Click="btnStartAnimation_Click"/>
+		<Button x:Name="btnPauseAnimation" Content="Pause Animation!" Margin="179,8,0,0" VerticalAlignment="Top" Click="btnPauseAnimation_Click" HorizontalAlignment="Left" Width="124"/>
+		<Button x:Name="btnStopAnimation" Content="Stop Animation!" HorizontalAlignment="Right" Margin="0,8,8,0" VerticalAlignment="Top" Width="124" Click="btnStopAnimation_Click"/>
+		<Button x:Name="btnResumeAnimation" Content="Resume Animation!" Margin="0,8,174,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="124" Click="btnResumeAnimation_Click"/>
+	</Grid>
+</UserControl>

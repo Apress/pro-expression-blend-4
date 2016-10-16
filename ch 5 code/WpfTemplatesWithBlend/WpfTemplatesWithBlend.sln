@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTemplatesWithBlend", "WpfTemplatesWithBlend\WpfTemplatesWithBlend.csproj", "{56706db0-e59d-44f2-b307-a991fb8bec62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56706DB0-E59D-44F2-B307-A991FB8BEC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56706DB0-E59D-44F2-B307-A991FB8BEC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56706DB0-E59D-44F2-B307-A991FB8BEC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56706DB0-E59D-44F2-B307-A991FB8BEC62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

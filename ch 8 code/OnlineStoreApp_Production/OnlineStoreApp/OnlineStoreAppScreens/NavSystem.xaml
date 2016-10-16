@@ -1,0 +1,43 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	mc:Ignorable="d"
+	x:Class="OnlineStoreAppScreens.NavSystem"
+	Width="481" Height="136">
+
+	<Grid x:Name="LayoutRoot" Background="White" Margin="0,0,0,-39">
+		<StackPanel HorizontalAlignment="Left" Margin="8,8,0,8" Orientation="Vertical" Width="120" d:LayoutOverrides="Height">
+			<ed:RegularPolygon ed:GeometryEffect.GeometryEffect="Sketch" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="{StaticResource BaseBorder-Sketch}" StrokeThickness="2" UseLayoutRounding="False" Height="120" Fill="#FFCE8585">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<pi:NavigateToScreenAction TargetScreen="OnlineStoreAppScreens.Screen_1"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</ed:RegularPolygon>
+			<TextBox Style="{StaticResource TextBox-Sketch}" TextWrapping="Wrap" Text="Main Screen"/>
+		</StackPanel>
+		<StackPanel Margin="177,8,184,8" Orientation="Vertical" d:LayoutOverrides="Height">
+			<ed:RegularPolygon ed:GeometryEffect.GeometryEffect="Sketch" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="{StaticResource BaseBorder-Sketch}" StrokeThickness="2" UseLayoutRounding="False" Height="120" Fill="#FFA2CE85">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<pi:NavigateToScreenAction TargetScreen="OnlineStoreAppScreens.ViewCart"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</ed:RegularPolygon>
+			<TextBox Style="{StaticResource TextBox-Sketch}" TextWrapping="Wrap" Text="View Cart"/>
+		</StackPanel>
+		<StackPanel Margin="0,8,8,8" Orientation="Vertical" d:LayoutOverrides="Height" HorizontalAlignment="Right" Width="120">
+			<ed:RegularPolygon ed:GeometryEffect.GeometryEffect="Sketch" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="{StaticResource BaseBorder-Sketch}" StrokeThickness="2" UseLayoutRounding="False" Height="120" Fill="#FF85A4CE">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<pi:NavigateToScreenAction TargetScreen="OnlineStoreAppScreens.Checkout"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</ed:RegularPolygon>
+			<TextBox Style="{StaticResource TextBox-Sketch}" TextWrapping="Wrap" Text="Checkout"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

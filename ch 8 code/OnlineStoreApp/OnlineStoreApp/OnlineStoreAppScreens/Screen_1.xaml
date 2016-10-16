@@ -1,0 +1,15 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:OnlineStoreAppScreens"
+	mc:Ignorable="d"
+	x:Class="OnlineStoreAppScreens.Screen_1"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<local:NavSystem HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,8,0,0"/>
+		<TextBlock Margin="201,238,196,182" Style="{StaticResource TextBlock-Sketch}" TextWrapping="Wrap" Text="Main Screen" FontSize="48" d:LayoutOverrides="Height"/>
+	</Grid>
+</UserControl>

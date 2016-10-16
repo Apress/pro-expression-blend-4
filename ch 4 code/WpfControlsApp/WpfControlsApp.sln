@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlsApp", "WpfControlsApp\WpfControlsApp.csproj", "{bd142da3-ce82-4ca0-80fa-0fdbb418fb9e}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD142DA3-CE82-4CA0-80FA-0FDBB418FB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD142DA3-CE82-4CA0-80FA-0FDBB418FB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD142DA3-CE82-4CA0-80FA-0FDBB418FB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD142DA3-CE82-4CA0-80FA-0FDBB418FB9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendUserControl", "BlendUserControl\BlendUserControl.csproj", "{203ef5df-3717-4048-bdc5-9ec7a3eb5cd0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{203EF5DF-3717-4048-BDC5-9EC7A3EB5CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203EF5DF-3717-4048-BDC5-9EC7A3EB5CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203EF5DF-3717-4048-BDC5-9EC7A3EB5CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203EF5DF-3717-4048-BDC5-9EC7A3EB5CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

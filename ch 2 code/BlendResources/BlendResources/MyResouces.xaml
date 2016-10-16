@@ -1,0 +1,10 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<RadialGradientBrush x:Key="myBrush" GradientOrigin="0.534,0.305">
+		<GradientStop Color="#FFE2DADA" Offset="0"/>
+		<GradientStop Color="#FFE55959" Offset="1"/>
+		<GradientStop Color="#FF197465" Offset="0.52"/>
+	</RadialGradientBrush>
+	<!-- Resource dictionary entries should be defined here. -->
+</ResourceDictionary>

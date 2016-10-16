@@ -1,0 +1,76 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows"
+	mc:Ignorable="d"
+	x:Class="PCGamingSketchScreens.Screen_1_4"
+	Width="800" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<vsm:VisualStateManager.VisualStateGroups>
+			<vsm:VisualStateGroup x:Name="Menu">
+				<vsm:VisualState x:Name="MouseWheelVS">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MENU" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+							<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="21.38">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase Oscillations="1" Springiness="6"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="21.3799991607666"/>
+							<EasingDoubleKeyFrame KeyTime="00:00:02" Value="60">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase Oscillations="1" Springiness="6"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="60"/>
+							<EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="105">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase Oscillations="1" Springiness="6"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="00:00:04.1000000" Value="105"/>
+							<EasingDoubleKeyFrame KeyTime="00:00:05.1000000" Value="157.158">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase Oscillations="1" Springiness="5"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</vsm:VisualState>
+				<vsm:VisualState x:Name="Reset"/>
+			</vsm:VisualStateGroup>
+		</vsm:VisualStateManager.VisualStateGroups>
+		<Image x:Name="Background__Sketchbook_" Source="Images/Background_Sketchbook.png"/>
+		<Image x:Name="Background_" Height="3" Width="4" Source="Images/Background.png" HorizontalAlignment="Left" Margin="196,149,0,0" VerticalAlignment="Top"/>
+		<Image x:Name="Layer_02___3" Source="Images/Layer02_3.png" Margin="140,50,156,51"/>
+		<Canvas x:Name="MENU" RenderTransformOrigin="0.5,0.5" Margin="159,68,173,72">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Image x:Name="Layer_2" Height="454" Width="464" Canvas.Left="2" Canvas.Top="3" Source="Images/Layer02.png"/>
+			<Image x:Name="circle1" Height="413" Width="414" Canvas.Left="27" Canvas.Top="23" Source="Images/circle1.png"/>
+			<Image x:Name="Layer_02___2" Height="299" Width="423" Canvas.Left="27" Canvas.Top="24" Source="Images/Layer02_2.png"/>
+			<Image x:Name="Layer_02___1" Height="188" Width="360" Canvas.Left="58" Canvas.Top="137" Source="Images/Layer02_1.png"/>
+			<Image x:Name="Layer_19___" Height="370" Width="355" Canvas.Left="61" Canvas.Top="40" Source="Images/Layer19.png"/>
+			<Image x:Name="Layer_13___" Height="247" Width="293" Canvas.Left="127" Canvas.Top="163" Source="Images/Layer13.png"/>
+			<Image x:Name="Layer_13_1_" Height="255" Width="289" Canvas.Left="55" Canvas.Top="39" Source="Images/Layer13_0.png"/>
+			<Image x:Name="Layer_01____copy___" Height="460" Width="468" Canvas.Left="0" Canvas.Top="8" Source="Images/Layer01b.png"/>
+		</Canvas>
+		<Image x:Name="Layer_03___1" Height="48" Source="Images/Layer03_2.png" Margin="227,40,219,0" VerticalAlignment="Top"/>
+		<Image x:Name="Layer_03___" Source="Images/Layer03.png" Margin="317,229,330,238"/>
+		<Image x:Name="Layer_04___" Height="78" Source="Images/Layer04.png" Margin="40,0,81,0" VerticalAlignment="Top"/>
+		<Image x:Name="Layer_1" Source="Images/Layer01.png" Margin="333,242,341,248"/>
+		<Image x:Name="Layer_03_1_" Height="43" Source="Images/Layer03_1.png" Margin="226,0,219,41" VerticalAlignment="Bottom"/>
+		<Image x:Name="Layer_02___" Source="Images/Layer02_0.png" Margin="332,240,340,246"/>
+		<Image x:Name="Layer_12___" Source="Images/Layer12.png" Margin="330,240,331,247"/>
+		<Image x:Name="mouseWheel" Height="313" Width="273" Source="Images/mouseWheel.png" HorizontalAlignment="Right" Margin="0,0,6,-41" VerticalAlignment="Bottom"/>
+	</Grid>
+</UserControl>

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight3DExample", "Silverlight3DExample\Silverlight3DExample.csproj", "{b0016241-e8a1-4820-a6dd-20ea3c8d8d70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0016241-E8A1-4820-A6DD-20EA3C8D8D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0016241-E8A1-4820-A6DD-20EA3C8D8D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0016241-E8A1-4820-A6DD-20EA3C8D8D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0016241-E8A1-4820-A6DD-20EA3C8D8D70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
